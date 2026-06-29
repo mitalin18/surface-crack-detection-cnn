@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# MLflow
+mlruns/
+
+# TensorBoard
+logs/
+
+# Uploaded Images
+uploads/
+
+# Training Datasets
+training/CrackDataset/
+training/Processed_CrackDataset/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -138,11 +138,25 @@ The training workflow consists of:
 
 ---
 
-# Experiment Tracking
+## Experiment Tracking
 
-The project integrates **MLflow** for experiment tracking.
+The project integrates **MLflow** for experiment tracking and **TensorBoard** for visualizing training progress.
 
-Logged information includes:
+### MLflow
+
+Launch the MLflow Tracking UI:
+
+```bash
+mlflow ui
+```
+
+Open:
+
+```text
+http://127.0.0.1:5000
+```
+
+MLflow logs:
 
 * Parameters
 * Training Accuracy
@@ -153,7 +167,23 @@ Logged information includes:
 * AUC
 * Saved Model
 
-TensorBoard is also used for visualizing training metrics.
+---
+
+### TensorBoard
+
+Launch TensorBoard:
+
+```bash
+tensorboard --logdir logs
+```
+
+Open:
+
+```text
+http://localhost:6006
+```
+
+Run the training script in a separate terminal while TensorBoard is running to monitor training metrics in real time.
 
 ---
 

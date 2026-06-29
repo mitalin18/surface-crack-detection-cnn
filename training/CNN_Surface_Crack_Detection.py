@@ -15,8 +15,6 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLRO
 from sklearn.metrics import confusion_matrix, classification_report
 from mlflow_utils import *
 
-#tensorboard --logdir logs in one terminal
-# run python code in ohe rterminal
 
 # ------------------------------------------------------------
 # Step 1: Basic Configuration
@@ -333,7 +331,7 @@ plt.plot(history.history["accuracy"], label="Training Accuracy")
 plt.plot(history.history["val_accuracy"], label="Validation Accuracy")
 plt.xlabel("Epochs")
 plt.ylabel("Accuracy")
-plt.title("Marvellous CNN Training vs Validation Accuracy")
+plt.title("CNN Training vs Validation Accuracy")
 plt.legend()
 plt.show()
 
